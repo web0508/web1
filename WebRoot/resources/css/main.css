@@ -1,0 +1,21 @@
+#test{
+	background-color:black;
+}
+
+#toolbar{
+	height:40px;
+	background:#D6E3F2;
+	border-bottom:1px #99bce8 solid;
+}
+
+#toolbar .barbtn{
+	float:left;
+	margin-top:5px;
+	margin-left:10px;
+}
+
+.searchbox{
+	float:left;
+	margin-top:5px;
+	margin-left:10px;
+}

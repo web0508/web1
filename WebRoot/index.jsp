@@ -1,26 +1,34 @@
-<%@ page language="java" import="java.util.*" pageEncoding="ISO-8859-1"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<%@page import="java.util.Date"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
     <base href="<%=basePath%>">
-    
-    <title>My JSP 'index.jsp' starting page</title>
-	<meta http-equiv="pragma" content="no-cache">
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="expires" content="0">    
-	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-	<meta http-equiv="description" content="This is my page">
-	<!--
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	-->
+    <title>人员管理系统</title>
+    <meta charset="utf-8"/>
+    <%@ include file="resources/page/jeasyui-resources.jsp"%>
+    <link href="resources/css/main.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="resources/js/main.js" charset="utf-8"></script>
   </head>
-  
-  <body>
-    This is my JSP page. <br>
+  <body class="easyui-layout">
+  		<div data-options="region:'north',border:false" title="人员管理系统" style="height:60px;">
+	  				<div id="toolbar">
+					<input class="easyui-searchbox barbtn" data-options="prompt:'Please Input Value',menu:'#mm',
+			searcher:function(value,name){alert(value+':'+name)}" style="width:150px" ></input>
+						<a class="easyui-linkbutton barbtn" href="javascript:addpeople();">新增</a>
+						<a href="javascript:updatepeople();" class="easyui-linkbutton barbtn" >修改</a>
+						<a href="javascript:deletepeople();" class="easyui-linkbutton barbtn" >删除</a>
+	  				</div>
+		</div>
+	  <div region="center"  style="background:#eee;">
+	 	<table id="tt"></table>  
+	  
+	  </div>  
+
   </body>
 </html>

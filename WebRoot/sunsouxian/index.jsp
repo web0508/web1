@@ -27,7 +27,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</div>
 	  <div region="center"  style="background:#eee;">
 	 	<table id="tt"></table>  
-	  
 	  </div>  
 
   </body>

@@ -17,7 +17,8 @@ $(document).ready(function(){
 
 function addpeople(){
 	alert("add new people");
-	
+    var form = document.getElementById("pagination");
+    form.submit();
 }
 
 function updatepeople(){

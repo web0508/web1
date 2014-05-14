@@ -16,6 +16,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <script type="text/javascript" src="yuxiangang/main.js" charset="utf-8"></script>
   </head>
   <body class="easyui-layout">
+             <form name="pagination" id="pagination" action="DataAction.action">
+                    <input type="hidden" name="userId" value="1001"/>
+                    <input type="hidden" name="userName" value="xiaoao"/>
+                    <input type="hidden" name="userSex" value="false"/>
+                    <input type="hidden" name="userAge" value="18"/>
+               </form>
   		<div data-options="region:'north',border:false" title="人员管理系统-于先刚" style="height:60px;">
 	  				<div id="toolbar">
 					<input class="easyui-searchbox barbtn" data-options="prompt:'Please Input Value',menu:'#mm',

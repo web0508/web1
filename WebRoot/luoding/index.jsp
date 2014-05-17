@@ -28,6 +28,22 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	  <div region="center"  style="background:#eee;">
 	 	<table id="tt"></table>  
 	  </div>  
-
+	<div id="addnewwin"  class="easyui-dialog openwindow" closed="true" title="新增人员"  style="width:500px;height:210px;	position:relative;overflow:hidden;"  >
+		
+		<form act=""  method="POST">
+		<div id="formcontainer">
+				<ul class="formul">
+					<li><span class="lispan">姓名:</span>   <input class="openinputtext" type="text"  id="" name="name"></input></li>
+					<li><span class="lispan">性别:</span>  <input class="openinputtext" type="text"  id="" name="name"></input></li>
+					<li><span class="lispan">电话号码:</span>  <input class="openinputtext" type="text"  id="userphone" name="userphone"></input></li>
+				</ul>
+			<div class="btmtoolbar">
+				<input type="button" value="取消" class="btn btn-primary toolbtn" onclick="javascript: $('#addnewwin').dialog('close');">
+				<input type="button" value="确定" class="btn btn-primary toolbtn" onclick="javascript: adduser();">
+			</div> 
+		</div>	
+		</form>
+		
+	</div>
   </body>
 </html>

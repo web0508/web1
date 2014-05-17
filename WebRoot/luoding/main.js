@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	$('#addnewwin').window('close');
 	$('#tt').datagrid({   
 			columns:[[   
 		          {field:'code',title:'ID',width:100},   
@@ -11,17 +12,15 @@ $(document).ready(function(){
 	
 	
 	
-	
 });
 
 
 function addpeople(){
-	alert("add new people");
-	
+	$('#addnewwin').dialog('open');
 }
 
 function updatepeople(){
-	alert("update a people");
+	$('#addnewwin').dialog('open');
 	
 }	
 
@@ -29,4 +28,10 @@ function deletepeople(){
 	alert("delete a people");
 	
 }	
+
+function adduser(){
+	
+	
+	
+}
 

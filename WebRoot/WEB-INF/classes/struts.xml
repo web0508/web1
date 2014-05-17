@@ -6,5 +6,10 @@
      <result name="success">/yuxiangang/welcome.jsp</result>
      <result name="error">/yuxiangang/error.jsp</result>
    </action>
+   
+   <action name="dataactionld" class="com.action.dataactionld">
+   	   <result name="success">/luoding/welcome.jsp</result>
+     	<result name="error">/luoding/error.jsp</result>
+   </action>
  </package>  
 </struts>    

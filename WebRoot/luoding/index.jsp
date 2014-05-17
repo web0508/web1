@@ -34,7 +34,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<div id="formcontainer">
 				<ul class="formul">
 					<li><span class="lispan">姓名:</span>   <input class="openinputtext" type="text"  id="" name="name"></input></li>
-					<li><span class="lispan">性别:</span>  <input class="openinputtext" type="text"  id="" name="name"></input></li>
+					<li>
+						<span class="lispan">性别:</span>  
+						<input type="radio" name="sex" value="男" checked="checked" />男
+						<input type="radio" name="sex" value="女" />女</li>
 					<li><span class="lispan">电话号码:</span>  <input class="openinputtext" type="text"  id="userphone" name="userphone"></input></li>
 				</ul>
 			<div class="btmtoolbar">

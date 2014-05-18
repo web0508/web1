@@ -17,4 +17,5 @@
   <filter-mapping>
   	<filter-name>struts2</filter-name>
   	<url-pattern>*.action</url-pattern>
+  	<!--http://localhost:8080/damo1/test.action  --> 
   </filter-mapping></web-app>

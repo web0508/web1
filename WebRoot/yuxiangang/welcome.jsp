@@ -1,10 +1,14 @@
-<%@ page language="java" import="java.util.*" pageEncoding="GB2312"%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
   <head>
-    <title>»¶Ó­</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Hello World!</title>
   </head>
+ 
   <body>
-    <font color="red" size="10">µÇÂ¼³É¹¦£¡</font>
+    <h2><s:property value="data.userName" /></h2>
+     <h2><s:property value="data.age" /></h2>
   </body>
 </html>

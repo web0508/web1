@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<%-- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <%@page import="java.util.Date"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
@@ -29,3 +29,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
   </body>
 </html>
+ --%>
+ 
+ <jsp:forward page="login.jsp"></jsp:forward>
+ 

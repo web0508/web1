@@ -1,0 +1,50 @@
+.i-portal-header-nav {
+	z-index: 999999;
+	font-size: 12px;
+	float: right;
+	height:20px;
+	background: url("../../resources/images/nav_bg.jpg");
+}
+.i-portal-header-nav ul{
+	margin:0px;
+	height:20px;
+	padding:0px;
+}
+.i-portal-header-nav ul li {
+	float: left;
+	list-style: none;
+	font: 12px Tahoma, Arial;
+}
+li {
+	list-style: none;
+}
+.i-portal-header-nav ul li a.i-portal-header-nav-welcome {
+	background: transparent url("../../resources/images/user.png") 10px center no-repeat;
+}
+.i-portal-header-nav ul li a.i-portal-header-nav-welcome {
+	padding-left: 31px;
+}
+.i-portal-header-nav ul li a.i-portal-header-nav-cfg {
+	background: transparent url("../../resources/images/config.png") 10px center no-repeat;
+}
+.i-portal-header-nav ul li a.i-portal-header-nav-cfg {
+	padding-left: 31px;
+}
+.i-portal-header-nav ul li a.i-portal-header-nav-logout {
+	background: transparent url("../../resources/images/shutdown.png") 10px center no-repeat;
+}
+.i-portal-header-nav ul li a.i-portal-header-nav-logout {
+	padding-left: 31px;
+}
+.i-portal-header-nav ul li a {
+	color: black;
+}
+.i-portal-header-nav ul li a {
+	display: block;
+	padding: 3px 12px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+a {
+	outline: none;
+}

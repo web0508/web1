@@ -11,12 +11,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <base href="<%=basePath%>">
     <title>人员管理系统--罗鼎 </title>
     <meta charset="utf-8"/>
-    <%@ include file="../resources/page/jeasyui-resources.jsp"%>
-    <link href="luoding/main.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="luoding/main.js" charset="utf-8"></script>
+ 
   </head>
   <body class="easyui-layout">
-  		<div data-options="region:'north',border:false" title="人员管理系统--罗鼎" style="height:60px;">
+   <link href="resources/common.css" rel="stylesheet" type="text/css" />
+    <link href="luoding/main.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="luoding/main.js" charset="utf-8"></script>
+  		<div data-options="region:'north',border:false"  style="height:41px; onverflow:hidden;">
 	  				<div id="toolbar">
 					<input class="easyui-searchbox barbtn" data-options="prompt:'Please Input Value',menu:'#mm',
 			searcher:function(value,name){alert(value+':'+name)}" style="width:150px" ></input>
@@ -29,7 +30,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	 	<table id="tt"></table>  
 	  </div>  
 	<div id="addnewwin"  class="easyui-dialog openwindow" closed="true" title="新增人员"  style="width:500px;height:210px;	position:relative;overflow:hidden;"  >
-		
 		<form  action="dataactionld.action"  method="POST">
 		<div id="formcontainer">
 				<ul class="formul">

@@ -30,6 +30,9 @@ boolean enableLoginCode = false;
 				}); */
 				
 			});
+			
+			function validateForm() {
+			}
 		</script>
 <style type="text/css">
 ﻿﻿
@@ -212,8 +215,5 @@ boolean enableLoginCode = false;
 	    </ul>
 	    </form>
     </div>
-
-
-
 </div>
 </body></html>

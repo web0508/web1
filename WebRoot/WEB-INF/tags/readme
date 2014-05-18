@@ -1,0 +1,28 @@
+1、access-menus.tag使用说明：
+	该标签用于生成当前登陆用户所能访问的系统菜单(jeasyui版)
+	a、页面引用标签指令
+		<%@ taglib tagdir="/WEB-INF/tags" prefix="tag" %>
+
+	b、页面使用easyui-accordion布局并引入标签
+		<div class="easyui-accordion" data-options="fit:true,border:false,fit:true">
+			<tag:access-menus/>
+		</div>
+	
+2、access-opts.tag使用说明：
+	该标签用于动态生成当前登陆用户所能访问的页面工具栏中的按钮(适用ExtJS和jeasyui)
+	a、页面上嵌入ExtJS或jeasyui的相关资源页面
+		使用extjs时，嵌入：	 <%@ include file="/resources/page/ext-resources.jsp"%>
+		使用jeasyui时，嵌入： <%@ include file="/resources/page/jeasyui-resources.jsp"%>
+	b、页面中使用生成的按钮
+		使用extjs时:
+			tbar:{
+				.....
+				items:[
+					getToolBtns('0')
+				]
+			}
+		使用jeasyui时:
+			.....
+			toolbar:[
+				getToolBtns('0')
+			]

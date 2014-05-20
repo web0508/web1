@@ -32,6 +32,7 @@ boolean enableLoginCode = false;
 			});
 			
 			function validateForm() {
+			this.submit();
 			}
 		</script>
 <style type="text/css">
@@ -56,7 +57,7 @@ boolean enableLoginCode = false;
 		    <div id="right">
 		
 		      <div id="login-frm-div" class="login-frm"> 
-		 		 <form action="front/cfg/account/login.do" method="post" onsubmit="return validateForm();">
+		 		 <form action="userManager.action" method="post" onsubmit="validateForm();">
 					<div class="login-main">
 						<h3>用户登录</h3>
 								<p class="id" style="position:relative; margin-top:15px;margin-left:12px;">

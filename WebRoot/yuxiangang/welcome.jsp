@@ -8,7 +8,7 @@
   </head>
  
   <body>
-    <h2><s:property value="data.userName" /></h2>
-     <h2><s:property value="data.age" /></h2>
+    <h2> 密码：<s:property value="account_password2" /></h2>
+     <h2> 账号：<s:property value="account_name" /></h2>
   </body>
 </html>

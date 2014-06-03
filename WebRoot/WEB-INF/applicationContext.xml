@@ -8,4 +8,26 @@
 
 	<bean id="sessionFactory"
 		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
-	</bean></beans>
+		<property name="dataSource">
+		<ref bean="dataSource"/>
+		</property>
+		<property name="hibernateProperties">
+		<props>
+		<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+		<prop key="hibernate.show_sql">true</prop>
+		</props>
+		</property>
+		<property name="mappingResource">
+		<list>
+		<value>com/oaksly/sun/entity/DeveloperInfo.hbm.xml</value>
+		</list>
+		</property>
+	</bean>
+	<!-- 数据库配置 -->
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+	    <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+	    <property name="url" value="jdbc:mysql://hdm-110.hichina.com:3306/hdm1100293_db"/>
+	    <property name="username" value="hdm1100293"/>
+	    <property name="password" value="DK432108"/>
+	</bean>
+	</beans>

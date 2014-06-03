@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping 
+			PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.oaksly.sun.entity.DeveloperInfo" table="tbl_developer">
+		<id name="id">
+			<generator class="identity"></generator>
+		</id>
+		<property name="name"></property>
+		<property name="age"></property>
+		<property name="gender"></property>
+		<property name="tel"></property>
+		<property name="city"></property>
+		<property name="email"></property>
+		<property name="password"></property>
+	</class>	
+</hibernate-mapping>
